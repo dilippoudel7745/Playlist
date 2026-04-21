@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Master Playlist</title>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+    <h2>Master Playlist</h2>
+<p>for search bar</p></h1>
+<div class="search-container">
+    <input type="text" id="songSearch" placeholder="Search for a song or artist..." onkeyup="filterSongs()">
+</div>
+
+<div class="playlist">
+    </div>
+
+<script>
+function filterSongs() {
+    let input = document.getElementById('songSearch').value.toLowerCase();
+    let songs = document.getElementsByClassName('song');
+    let categories = document.getElementsByClassName('category');
+
+    for (let i = 0; i < songs.length; i++) {
+        let title = songs[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+        if (title.includes(input)) {
+            songs[i].style.display = "";
+        } else {
+            songs[i].style.display = "none";
+        }
+    }
+}
+</script>
+<p>till here</p>
+    <div class="playlist">
+
+        <div class="category"><h3>English Songs</h3></div>
+        
+        <div class="song"><h3>50 Cent - In Da Club</h3><audio controls><source src="50 Cent - In Da Club (Official Music Video).mp3"></audio></div>
+        <div class="song"><h3>Akon - Lonely</h3><audio controls><source src="Akon - Lonely (Official Music Video) (1).mp3"></audio></div>
+        <div class="song"><h3>Alan Walker - Faded</h3><audio controls><source src="Alan Walker - Faded.mp3"></audio></div>
+        <div class="song"><h3>Alec Benjamin - Let Me Down Slowly</h3><audio controls><source src="Alec Benjamin - Let Me Down Slowly [Official Music Video].mp3"></audio></div>
+        <div class="song"><h3>Apocalypse - Cigarettes After Sex</h3><audio controls><source src="Apocalypse - Cigarettes After Sex.mp3"></audio></div>
+        <div class="song"><h3>Avicii - Levels</h3><audio controls><source src="Avicii - Levels.mp3"></audio></div>
+        <div class="song"><h3>Avicii - The Nights</h3><audio controls><source src="Avicii - The Nights (Lyrics) my father told me.mp3"></audio></div>
+        <div class="song"><h3>Avicii - Waiting For Love</h3><audio controls><source src="Avicii - Waiting For Love.mp3"></audio></div>
+        <div class="song"><h3>Avicii - Wake Me Up</h3><audio controls><source src="Avicii - Wake Me Up (Official Video).mp3"></audio></div>
+        <div class="song"><h3>Blue (Official Music Video)</h3><audio controls><source src="blue (Official Music Video).mp3"></audio></div>
+        <div class="song"><h3>Christina Perri - A Thousand Years</h3><audio controls><source src="Christina Perri - A Thousand Years [Official Music Video].mp3"></audio></div>
+        <div class="song"><h3>Coldplay - Hymn For The Weekend</h3><audio controls><source src="Coldplay - Hymn For The Weekend (Official Video).mp3"></audio></div>
+        <div class="song"><h3>Coldplay - Paradise</h3><audio controls><source src="Coldplay - Paradise (Official Video).mp3"></audio></div>
+        <div class="song"><h3>David Guetta - Titanium ft. Sia</h3><audio controls><source src="David Guetta - Titanium ft. Sia (Official Video).mp3"></audio></div>
+        <div class="song"><h3>Ed Sheeran - Perfect</h3><audio controls><source src="Ed Sheeran - Perfect (Lyrics).mp3"></audio></div>
+        <div class="song"><h3>Ed Sheeran - Shape of You</h3><audio controls><source src="Ed Sheeran - Shape of You (Official Music Video).mp3"></audio></div>
+        <div class="song"><h3>Eminem - Love The Way You Lie</h3><audio controls><source src="Eminem - Love The Way You Lie ft. Rihanna.mp3"></audio></div>
+        <div class="song"><h3>Eminem - Mockingbird</h3><audio controls><source src="Eminem - Mockingbird [Official Music Video].mp3"></audio></div>
+        <div class="song"><h3>Eminem - Not Afraid</h3><audio controls><source src="Eminem - Not Afraid.mp3"></audio></div>
+        <div class="song"><h3>Eminem - Without Me</h3><audio controls><source src="Eminem - Without Me (Official Music Video).mp3"></audio></div>
+        <div class="song"><h3>Ghost - Mary On A Cross</h3><audio controls><source src="Ghost - Mary On A Cross (Live In Tampa 2022).mp3"></audio></div>
+        <div class="song"><h3>Glass Animals - Heat Waves</h3><audio controls><source src="Glass Animals - Heat Waves (Official Video).mp3"></audio></div>
+        <div class="song"><h3>Hanumankind - Big Dawgs</h3><audio controls><source src="Hanumankind  Big Dawgs  Ft. Kalmi (Official Music Video)  Def Jam India.mp3"></audio></div>
+        <div class="song"><h3>Imagine Dragons - Believer</h3><audio controls><source src="Imagine Dragons - Believer (Official Music Video).mp3"></audio></div>
+        <div class="song"><h3>K'NAAN - Wavin' Flag</h3><audio controls><source src="K'NAAN - Wavin' Flag (Coca-Cola Celebration Mix).mp3"></audio></div>
+        <div class="song"><h3>Lady Gaga & Bruno Mars - Die With A Smile</h3><audio controls><source src="Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3"></audio></div>
+        <div class="song"><h3>Lil Nas X - Old Town Road</h3><audio controls><source src="Lil Nas X - Old Town Road (Official Video) ft. Billy Ray Cyrus.mp3"></audio></div>
+        <div class="song"><h3>Lukas Graham - 7 Years</h3><audio controls><source src="Lukas Graham - 7 Years [Official Music Video].mp3"></audio></div>
+        <div class="song"><h3>Maroon 5 - Sugar</h3><audio controls><source src="Maroon 5 - Sugar (Official Music Video).mp3"></audio></div>
+        <div class="song"><h3>Masked Wolf - Astronaut In The Ocean</h3><audio controls><source src="Masked Wolf - Astronaut In The Ocean (Official Music Video).mp3"></audio></div>
+        <div class="song"><h3>NEFFEX - Cold</h3><audio controls><source src="NEFFEX - Cold [Copyright Free] No.60.mp3"></audio></div>
+        <div class="song"><h3>NEFFEX - Fight Back</h3><audio controls><source src="NEFFEX - Fight Back [Official Video] No.37.mp3"></audio></div>
+        <div class="song"><h3>NEFFEX - Grateful</h3><audio controls><source src="NEFFEX - Grateful [Copyright Free] No.54.mp3"></audio></div>
+        <div class="song"><h3>Ogryzek - EMPIRE</h3><audio controls><source src="Ogryzek - EMPIRE (Official Visualiser).mp3"></audio></div>
+        <div class="song"><h3>One Direction - Night Changes</h3><audio controls><source src="One Direction - Night Changes.mp3"></audio></div>
+        <div class="song"><h3>OneRepublic - Counting Stars</h3><audio controls><source src="OneRepublic - Counting Stars.mp3"></audio></div>
+        <div class="song"><h3>Passenger - Let Her Go</h3><audio controls><source src="Passenger - Let Her Go (Feat. Ed Sheeran - Anniversary Edition) [Official Video].mp3"></audio></div>
+        <div class="song"><h3>Post Malone - Sunflower</h3><audio controls><source src="Post Malone, Swae Lee - Sunflower (Spider-Man_ Into the Spider-Verse) (Official Video).mp3"></audio></div>
+        <div class="song"><h3>Prateek Kuhad - Co2</h3><audio controls><source src="Prateek Kuhad - Co2 (Official Audio).mp3"></audio></div>
+        <div class="song"><h3>PSY - GANGNAM STYLE</h3><audio controls><source src="PSY - GANGNAM STYLE(강남스타일) MV.mp3"></audio></div>
+        <div class="song"><h3>Rema & Selena Gomez - Calm Down</h3><audio controls><source src="Rema, Selena Gomez - Calm Down (Official Music Video) (2).mp3"></audio></div>
+        <div class="song"><h3>Ruth B. - Dandelions</h3><audio controls><source src="Ruth B. - Dandelions (Audio).mp3"></audio></div>
+        <div class="song"><h3>Sia - Cheap Thrills</h3><audio controls><source src="Sia - Cheap Thrills (Official Lyric Video) ft. Sean Paul.mp3"></audio></div>
+        <div class="song"><h3>Skillet - Hero</h3><audio controls><source src="Skillet - Hero (Official Video).mp3"></audio></div>
+        <div class="song"><h3>Stephen Sanchez - Until I Found You</h3><audio controls><source src="Until I Found You -Stephen Sanchez ft. Em Beihold (Lyric Video).mp3"></audio></div>
+        <div class="song"><h3>Superhero</h3><audio controls><source src="Superhero.mp3"></audio></div>
+        <div class="song"><h3>The Chainsmokers - Closer</h3><audio controls><source src="The Chainsmokers - Closer (Lyric) ft. Halsey.mp3"></audio></div>
+        <div class="song"><h3>The Chainsmokers - Don't Let Me Down</h3><audio controls><source src="The Chainsmokers - Don't Let Me Down (Official Video) ft. Daya.mp3"></audio></div>
+        <div class="song"><h3>The Kid LAROI & Justin Bieber - STAY</h3><audio controls><source src="The Kid LAROI, Justin Bieber - STAY (Official Video).mp3"></audio></div>
+        <div class="song"><h3>The Script - Hall of Fame</h3><audio controls><source src="The Script - Hall of Fame (Official Video) ft. will.i.am.mp3"></audio></div>
+        <div class="song"><h3>Thousand Foot Krutch - Courtesy Call</h3><audio controls><source src="Thousand Foot Krutch_ Courtesy Call (Official Audio).mp3"></audio></div>
+
+        <div class="category"><h3>Hindi Songs</h3></div>
+
+        <div class="song"><h3>Aaj Ki Raat - Stree 2</h3><audio controls><source src="Aaj Ki Raat -Full Song Stree 2Tamannaah BhatiaRajkummar RaoSachin-JigarMadhubantiDivyaAmitabh.mp3"></audio></div>
+        <div class="song"><h3>Anuv Jain - Alag Aasmaan</h3><audio controls><source src="Anuv Jain - ALAG AASMAAN (a song on the ukulele).mp3"></audio></div>
+        <div class="song"><h3>Arijit Singh - Hawayein</h3><audio controls><source src="Hawayein – Jab Harry Met Sejal _ Anushka Sharma _Shah Rukh Khan_ Pritam _ Imtiaz Ali_ Arijit Singh (128 kbps).mp3"></audio></div>
+        <div class="song"><h3>Arijit Singh - Kesariya</h3><audio controls><source src="Kesariya - Brahmāstra _ Ranbir Kapoor _ Alia Bhatt _ Pritam _ Arijit Singh _ Amitabh Bhattacharya_4K (128 kbps).mp3"></audio></div>
+        <div class="song"><h3>Arijit Singh - Phir Kabhi</h3><audio controls><source src="PHIR KABHI (Reprise) Full Song _ M.S. DHONI _ Arijit Singh _ Sushant Singh, Disha Patani (128 kbps).mp3"></audio></div>
+        <div class="song"><h3>Atif Aslam - Piya O Re Piya</h3><audio controls><source src="Piya O Re Piya Lyrical - Tere Naal Love Ho Gaya  Riteish Deshmukh, Genelia  Atif Aslam, Shreya (1).mp3"></audio></div>
+        <div class="song"><h3>Atif Aslam - Tu Jaane Na</h3><audio controls><source src="Tu Jaane Na - Lyrical  Ajab Prem Ki Ghazab Kahani  Atif Aslam  Ranbir Kapoor, Katrina.mp3"></audio></div>
+        <div class="song"><h3>Baaghi - Sab Tera</h3><audio controls><source src="SAB TERA Full Song (Audio)  BAAGHI  Tiger Shroff, Shraddha Kapoor  Armaan Malik  Amaal Mallik.mp3"></audio></div>
+        <div class="song"><h3>Gravero Mashup - Let Her Go x Husn</h3><audio controls><source src="Let Her Go x Husn (Gravero Mashup)  Anuv Jain.mp3"></audio></div>
+        <div class="song"><h3>Itni Si Baat Hain - Azhar</h3><audio controls><source src="Itni Si Baat Hain Full Video Song  AZHAR  Emraan Hashmi, Prachi Desai  Arijit Singh, Pritam (1).mp3"></audio></div>
+        <div class="song"><h3>Jaan Nisaar - Kedarnath</h3><audio controls><source src="Jaan Nisaar - Lyrical  Kedarnath Arijit Singh  Sushant Singh Rajput  Sara Ali Khan Amit Trivedi.mp3"></audio></div>
+        <div class="song"><h3>Jogi - Shaadi Mein Zaroor Aana</h3><audio controls><source src="Jogi - Lyrical  Shaadi Mein Zaroor Aana  Rajkummar Rao, Kriti Kharbanda  Arko ft Aakanksha Sharma.mp3"></audio></div>
+        <div class="song"><h3>Naino Ne Baandhi - Gold</h3><audio controls><source src="Naino Ne Baandhi - Lyrical  Gold  Akshay Kumar  Mouni Roy  Arko (1).mp3"></audio></div>
+        <div class="song"><h3>Namo Namo - Kedarnath</h3><audio controls><source src="Namo Namo - Lyrical _ Kedarnath _ Sushant Rajput _ Sara Ali Khan _ Amit Trivedi _ Amitabh B (128 kbps).mp3"></audio></div>
+        <div class="song"><h3>Qaafirana - Kedarnath</h3><audio controls><source src="Qaafirana _ Kedarnath _ Sushant Rajput _ Sara Ali Khan _ Arijit Singh & Nikhita _ Amit Trivedi (128 kbps).mp3"></audio></div>
+        <div class="song"><h3>Raataan Lambiyan - Shershaah</h3><audio controls><source src="Raataan Lambiyan – Official Video _ Shershaah _ Sidharth – Kiara _ Tanishk B_ Jubin Nautiyal  _Asees (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Sweetheart - Kedarnath</h3><audio controls><source src="Sweetheart - Lyrical  Kedarnath  Sushant Singh  Sara Ali Khan  Dev Negi  Amit Trivedi.mp3"></audio></div>
+
+        <div class="category"><h3>Nepali Songs</h3></div>
+
+        <div class="song"><h3>1974AD - Chaubandi Choli</h3><audio controls><source src="Chaubandi Choli by 1974AD (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>1974AD - Gurasai Fulyo Banaima</h3><audio controls><source src="Gurasai Fulyo Banaima _गुराँसै फुल्यो वनैमा_ _ 1974 AD _ Lyrical Video With Guitar Chords (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>1974AD - Mutu Bhari Bhari</h3><audio controls><source src="Mutu Bhari Bhari _ 1974AD (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Balen - Balidan</h3><audio controls><source src="Balen Performing Balidan  Its My Show with Suraj Singh Thakuri (1).mp3"></audio></div>
+        <div class="song"><h3>Barney Sku - Your Eyes x Teri Nazron Ne</h3><audio controls><source src="Barney Sku- Your eyes got my heart falling for you x (Teri nazron ne) #your eyes got my heart.mp3"></audio></div>
+        <div class="song"><h3>Bidesh Jane Mayalu Timilai</h3><audio controls><source src="Bidesh Jane Mayalu Timilai _ Deepak Thapa _ Old Nepali Song (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Cartoonz Crew - Dilko Bhittaima</h3><audio controls><source src="Dilko Bhittaima Official Music Video ¦¦ The Cartoonz Crew.mp3"></audio></div>
+        <div class="song"><h3>Cartoonz Crew & Priyanka Karki - Machhile Khane</h3><audio controls><source src="The Cartoonz Crew & Priyanka Karki New Song Machhile Khane¦¦Melina Rai & Saroj Oli - Machhile Khane.mp3"></audio></div>
+        <div class="song"><h3>Chhakka Panja - Purba Pashchim Rail</h3><audio controls><source src="Purba Pashchim Rail - Video Song ¦ CHHAKKA PANJA ¦ छक्का पन्जा ¦ Priyanka Karki, Deepak Raj Giri.mp3"></audio></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="song"><h3>Deuta - Hamro Yug Ko Pani Ramro</h3><audio controls><source src="Ke Bhanne Hamro Samay _ Hamro Yug Ko Pani Ramro _ Deuta Movie Song _ Indrajeet Mijar _ Rajesh Hamal (128 kbps).mp3"></audio></div>
+        
+        <div class="song"><h3>Ekdev Limbu - Aankha Ma Aaune Sapani</h3><audio controls><source src="Ekdev Limbu - Aankha Ma Aaune Sapani [Official Music video].mp3"></audio></div>
+        <div class="song"><h3>Ekdev Limbu - Jhim Jhimaune Aankha</h3><audio controls><source src="EKDEV LIMBU - Jhim Jhimaune Aankha [Official Music Video] (1).mp3"></audio></div>
+        <div class="song"><h3>Ekdev Limbu - Sirful 2</h3><audio controls><source src="SIRFUL - 2 Beyond & Ekdev limbu (official music video ).mp3"></audio></div>
+    
+       <div class="song"><h3>Karma Band - Kaha Hola Ghar Bara</h3><audio controls><source src="Kaha Hola Ghar Bara - Karma Band Official Music Video (128 kbps).mp3"></audio></div>
+        <div class="song"><h3>Khusma - Rukum Maikot</h3><audio controls><source src="RUKUM MAIKOT - New Nepali Movie khusma Song 2024  Ft. Dhiraj Magar, Upasana Singh Thakuri (1).mp3"></audio></div>
+        <div class="song"><h3>Melina Rai - Jail Pani Sahula</h3><audio controls><source src="Jail Pani Sahula  Melina Rai & Bal Bahadur Rajbanshi  Laxmi - Jiban Bhattarai.mp3"></audio></div>
+        <div class="song"><h3>Nabin K Bhattarai - Lakhau Ko Dhadkan</h3><audio controls><source src="Nabin K Bhattarai _ Timi Hau Lakhau Ko Dhadkan _ Nepali Pop Song (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Nabin K Bhattarai - Raat Bityo</h3><audio controls><source src="Raat Bityo _ Nabin K Bhattarai - NKB _ Lyrical Video (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Nabin K Bhattarai - Ye Jhari</h3><audio controls><source src="Ye Jhari _ Nabin K Bhattarai - NKB _ Lyrical Video (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Nepathya - Aaganai Bhari</h3><audio controls><source src="Nepathya – Aaganai Bhari (आँगनै भरि) (128 kbps).mp3"></audio></div>
+        <div class="song"><h3>Nepathya - Gaun Gaun Bata Utha</h3><audio controls><source src="Nepathya - Gaun Gaun Bata Utha (गाउँ गाउँबाट उठ ) (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Nepathya - Rato ra Chandra Surya</h3><audio controls><source src="Nepathya - Rato ra Chandra Surya (रातो र चन्द्रसूर्य) (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Nepathya - Sirfula Siraima</h3><audio controls><source src="Nepathya - Sirfula Siraima (शिरफूल शिरैमा) (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Nepathya - Taal Ko Pani</h3><audio controls><source src="Nepathya - Taal Ko Pani (Official Live Video) (64 kbps).mp3"></audio></div>
+        <div class="song"><h3>Purna Rai - Sparsha Sangeet</h3><audio controls><source src="Purna Rai & Dajubhaiharu - Sparsha Sangeet.mp3"></audio></div>
+        <div class="song"><h3>Shiva Pariyar - Kya Daami</h3><audio controls><source src="Kya Daami by Shiva Pariyar.mp3"></audio></div>
+        <div class="song"><h3>Sunil Giri - Deurali 2</h3><audio controls><source src="Deurali 2(Sunn ko Chura) Sunil Giri ¦ Feat Paul & Kristina.mp3"></audio></div>
+        <div class="song"><h3>Woda Number 6 - Surke Thaili Khai</h3><audio controls><source src="SURKE THAILI KHAI -- सुर्के थैली खै -- Woda Number 6 -- Nepali Movie.mp3"></audio></div>
+        <div class="song"><h3>Yama Buddha - Saathi</h3><audio controls><source src="YAMA BUDDHA- SAATHI [OFFICIAL MUSIC VIDEO].mp3"></audio></div>
+    </div>
+
+<p>make them play repeatedly</p>
+<script>
+    // Get all audio elements on the page
+    const players = document.querySelectorAll('audio');
+
+    players.forEach((player, index) => {
+        player.onended = function() {
+            // Check if there is another song after this one
+            if (index + 1 < players.length) {
+                const nextPlayer = players[index + 1];
+                nextPlayer.play(); // Start the next song
+                
+                // Optional: Scroll the next song into view so you see what's playing
+                nextPlayer.parentElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        };
+    });
+</script>
+
+
+</body>
+</html>
